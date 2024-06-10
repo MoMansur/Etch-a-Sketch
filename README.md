@@ -1,4 +1,4 @@
-live demo: 
+live demo: https://momansur.github.io/Etch-a-Sketch/
 
 # Etch-A-Sketch
 
