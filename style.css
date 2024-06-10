@@ -4,6 +4,7 @@ body{
 
 h1{
     color: white;
+    border-bottom: 1px solid rgb(34, 99, 34);
 }
 
 .container{
@@ -21,7 +22,9 @@ h1{
     flex-wrap: wrap;
     flex-direction: row;
     border-radius: 5px;
-    background-color: lightgreen;
+    background-color: rgb(31, 63, 31);
+    color: white;
+    padding: 5px;
 }
 
 .flex{
@@ -30,7 +33,7 @@ h1{
 }
 
 #ColorInput{
-    width: 150px;
+    width: 130px;
     height: 60px;
     padding: 0;
     border: 1px solid white;
@@ -64,8 +67,5 @@ h1{
     margin: 0px;
     box-sizing: border-box;
 }
-
-
-
 
 
