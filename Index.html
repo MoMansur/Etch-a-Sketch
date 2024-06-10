@@ -11,37 +11,41 @@
      
     </style>
 </head>
-<body>
+<body style="background-color: rgb(84, 97, 77);">
 
     <div class="container">
-        <h1 class="text-center">Etch-A-Sketch</h1>
-        <div class="row">
-            <div class="col-3" style="background-color: lightgreen;">
-                <h2>Play</h2>
-                <div class="colorSection">
-                
-                    <input type="color" class="form-control form-control-color" id="ColorInput" value="#000000">            
-            </div>
+       <div class="row" id="controlDiv" >
+        <h1 class="text-center">Sketch Pad</h1>
 
-            <button class="btn btn-dark m-4">Color Mode</button>
-            <button class="btn btn-light m-4">Rainbow Mode</button>
+        <div class="col-3">
             
-            <button class="btn btn-success m-3">New</button>
-            <button class="btn btn-danger m-3">reset</button>
-
-                <label for="squaresPerSide" class="form-label" id="sizeRangeLabel">Select Size</label>
-                <input type="range" class="form-range" id="squaresPerSide" min="1" max="100" value="16">
-                <button id="generateGridButton" class="btn btn-primary">Generate Grid</button>
-
+            <label for="ColorInput">Choose your Color</label>
+            <input type="color" class="form-control form-control-color" id="ColorInput" value="#000000">            
+        </div>
+        <div class="col-9">
+            <div id="flex">
+                <label for="squaresPerSide" class="form-label text-center" id="sizeRangeLabel">Select Size</label>
             </div>
-            <div class="col-9">
-                <div id="gridContainer" class="d-flex align-items-baseline">
+            <input type="range" id="squaresPerSide" min="1" max="64" value="16">
+
+            <button id="generateGridButton" class="btn btn-primary">Generate Grid</button>
+            <button class="btn btn-danger" id="resetBtn">reset</button>
+
+        </div>
+       </div>
+           
+
+            <div class="row" id="drawContainer">
+                <div id="gridContainer" class="border border-3">
 
                 </div>
             </div>
-        </div>
+
     </div>
 
+
+        
+    
    
  
 
