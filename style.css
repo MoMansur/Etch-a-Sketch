@@ -2,68 +2,69 @@ body{
     background-color: lightblue;
 }
 
-
-
-
-#ColorInput{
-    width: 60px;
-    height: 60px;
-    border-radius: 115px;
-    padding: 0;
-    margin: 10px;
+h1{
+    color: white;
+    border-bottom: 1px solid rgb(34, 99, 34);
 }
 
-.col-3{
+.container{
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    align-items: center;
-}
-
-button{
-
-  margin: 40px;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.colorSection{
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    background-color: lightgreen;
-    border: 3px solid green;
-    border-radius: 5px;
 }
-span{
-    width: 60px;
-    margin: 5px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-    user-select: none;
-    display: block;
-
+.row{
+    width: 900px;
+  
 }
-
-span .Color:hover {
-    background-color: rgb(86, 86, 98);
+#controlDiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: rgb(31, 63, 31);
     color: white;
+    padding: 5px;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#ColorInput{
+    width: 130px;
+    height: 60px;
+    padding: 0;
+    border: 1px solid white;
+}
+
+
+#squaresPerSide{
+    width: 420px;
+    background-color: rgb(15, 42, 51);
+    align-items: center;
+    line-height: 40px;
 }
 
 
 #gridContainer {
     display: flex;
     flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: white;    
     border: 1px solid;
-
+    width: 900px; /* Adjust to fit the container */
+    height: auto;
+    min-height: 80vh;
+    padding: 0;
+    justify-content: flex-start; /* Start at the beginning */
+    border: 1px solid brown;
 }
 .square {
-    width: calc(960px / var(--squares-per-side)); /* Calculate width of each square */
-    height: calc(960px / var(--squares-per-side)); /* Calculate height of each square */
-    border: 1px solid black;
+    width: calc(900px / var(--squares-per-side)); 
+    height: calc(80vh / var(--squares-per-side)); 
+    margin: 0px;
     box-sizing: border-box;
 }
